@@ -68,6 +68,12 @@ The official api is documented [here](https://developer.groupe-psa.io/webapi/b2c
     2.11 Unlock/lock the doors
     http://localhost:5000/lock_door/YOURVIN/lock or unlock
 
+    2.12 Get all vehicle trips
+    http://localhost:5000/get_vehicletrips
+
+    2.13 Get all vehicle chargings
+    http://localhost:5000/get_vehiclechargings
+
 ## III. Use the dashboard
 
 You can add the -r argument to record the position of the vehicle and retrieve this information in a dashboard.
