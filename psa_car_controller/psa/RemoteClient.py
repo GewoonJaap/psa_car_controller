@@ -230,13 +230,8 @@ class RemoteClient:
         self.publish(msg)
         return True
 
-    def lock_door(self, vin, lock: bool):
-        if lock:
-            value = "lock"
-        else:
-            value = "unlock"
-
-        msg = self.mqtt_request(vin, {"action": value}, "/Doors")
+    def lock_door(self, vin, lock):
+        msg = self.mqtt_request(vin, {"action": lock}, "/Doors")
         logger.info(msg)
         self.publish(msg)
         return True

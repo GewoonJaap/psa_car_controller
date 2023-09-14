@@ -59,6 +59,14 @@ The official api is documented [here](https://developer.groupe-psa.io/webapi/b2c
     2.8 Change charge hour (for example: set it to 22h30)
     http://127.0.0.1:5000/charge_hour?vin=YOURVIN&hour=22&minute=30
 
+    2.9 Sound the horn three times
+    http://localhost:5000/horn/YOURVIN
+
+    2.10 Flash the lights for 10 seconds
+    http://localhost:5000/lights/YOURVIN
+
+    2.11 Unlock/lock the doors
+    http://localhost:5000/lock_door/YOURVIN/lock or unlock
 
 ## III. Use the dashboard
 
