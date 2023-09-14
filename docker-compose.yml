@@ -2,7 +2,7 @@ version: "2"
 
 services:
   psacc:
-    # image: flobz/psa_car_controller:latest
+    # image: gewoonjaap/psa_car_controller:latest
     build: 
       dockerfile: Dockerfile
     restart: unless-stopped
