@@ -31,7 +31,6 @@ jobs:
   #        name: wheel-package
   #        path: dist/psa_car_controller-0.0.0-py3-none-any.whl
   push_to_registry:
-    needs: create_release
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
