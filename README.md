@@ -74,6 +74,9 @@ The official api is documented [here](https://developer.groupe-psa.io/webapi/b2c
     2.13 Get all vehicle chargings
     http://localhost:5000/get_vehiclechargings
 
+    2.14 Get all vehicles
+    http://localhost:5000/get_vehicles
+
 ## III. Use the dashboard
 
 You can add the -r argument to record the position of the vehicle and retrieve this information in a dashboard.
