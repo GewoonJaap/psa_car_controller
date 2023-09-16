@@ -388,4 +388,11 @@
   reg: VR7NDDGYPN.*
   max_elec_consumption: 70
   max_fuel_consumption: 30
-
+- !CarModel
+  name: C4 Picasso
+  battery_power: 0
+  fuel_capacity: 46
+  abrp_name:
+  reg: VF73AHNYTJ.*
+  max_elec_consumption: 70
+  max_fuel_consumption: 30
