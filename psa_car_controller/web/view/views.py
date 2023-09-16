@@ -321,6 +321,15 @@ def get_chargings():
         logger.debug("Failed to get chargings, there is probably not enough data yet:", exc_info=True)
         return FlaskResponse(json.dumps([]), mimetype='application/json')
 
+@app.route('/get_climatestatus/<string:vin>')
+def get_climatestatus(vin):
+    try:
+        carDetails = APP.myp.get_vehicle_info(vin, True)
+        conditionState = carDetails.preconditionning.air_conditioning.status == "Disabled"
+        # 1 = Disabled, 0 = Enabled for Home Assistant
+        return str(int(conditionState))
+    except RateLimitException:
+        return jsonify({"error": "Climate status rate limit exceeded"})
 
 @app.after_request
 def after_request(response):

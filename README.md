@@ -77,6 +77,9 @@ The official api is documented [here](https://developer.groupe-psa.io/webapi/b2c
     2.14 Get all vehicles
     http://localhost:5000/get_vehicles
 
+    2.15 Get current preconditioning status (1 = Disabled, 0 = Activated, can be used in Home Assistant)
+    http://localhost:5000/get_climatestatus/YOURVIN
+
 ## III. Use the dashboard
 
 You can add the -r argument to record the position of the vehicle and retrieve this information in a dashboard.
